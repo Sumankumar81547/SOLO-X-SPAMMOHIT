@@ -35,7 +35,7 @@ for name in files:
         plugin_name = patt.stem
         load_plugins(plugin_name)
 
-print("\nThe Bot Has Been Deployed Successfully. 👻\nMy Master ---> @JARVIS_V2")
+print("\nThe Bot Has Been Deployed Successfully. 👻\nMy Master ---> @Mohitkumar076")
 
 async def main():
     await X1.run_until_disconnected()
