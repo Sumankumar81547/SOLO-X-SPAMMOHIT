@@ -8,10 +8,10 @@ from config import X1
 START_BUTTON = [
     [Button.inline("• ᴄᴏᴍᴍᴀɴᴅs •", data="help_back")],
     [
-        Button.url("• ᴄʜᴀɴɴᴇʟ •", "https://t.me/JARVIS_V_SUPPORT"),
-        Button.url("• sᴜᴘᴘᴏʀᴛ •", "https://t.me/Dora_Hub")
+        Button.url("• ᴄʜᴀɴɴᴇʟ •", "https://t.me/ROYAL_WORLD_84"),
+        Button.url("• sᴜᴘᴘᴏʀᴛ •", "https://t.me/R_I_S_I_NG")
     ],
-    [Button.url("• ʀᴇᴘᴏ •", "https://github.com/doraemon890/SOLO-X-SPAM")]
+    [Button.url("• ʀᴇᴘᴏ •", "https://github.com/Sumankumar81547/SOLO-X-SPAMMOHIT")]
 ]
 
 IMAGE_URL = "https://github.com/doraemon890/JARVIS-X-SPAM/assets/155803358/f30a5777-9823-45d0-9860-342eceadb774"
@@ -29,8 +29,8 @@ def create_start_text(bot_name, bot_id, sender_name, sender_id):
         f"**ʜᴇʏ​ [{sender_name}](tg://user?id={sender_id}),\n\n"
         f"ɪ ᴀᴍ [{bot_name}](tg://user?id={bot_id})​**\n"
         "━━━━━━━━━━━━━━━━━━━\n\n"
-        f"» **ᴍʏ ᴅᴇᴠᴇʟᴏᴘᴇʀ​ : [JARVIS](https://t.me/JARVIS_V2)**\n\n"
-        f"» **ᴊᴀʀᴠɪs V2 :** `{JARVIS_VERSION}`\n"
+        f"» **ᴍʏ ᴅᴇᴠᴇʟᴏᴘᴇʀ​ : [MOHIT](https://t.me/Mohitkumar076)**\n\n"
+        f"» **Mohitkumar076 :** `{JARVIS_VERSION}`\n"
         f"» **ᴘʏᴛʜᴏɴ ᴠᴇʀsɪᴏɴ :** `{PYTHON_VERSION}`\n"
         f"» **ᴛᴇʟᴇᴛʜᴏɴ ᴠᴇʀsɪᴏɴ :** `{__version__}`\n"
         "━━━━━━━━━━━━━━━━━"
