@@ -34,11 +34,11 @@ async def fetch_heroku_logs(ANNIE):
 
 async def write_logs_to_file(logs):
     with open("Jarvislogs.txt", "w") as logfile:
-        logfile.write("𖤍 ᴊᴀʀᴠɪs 𖤍 [ ʙᴏᴛ ʟᴏɢs ]\n\n" + logs)
+        logfile.write("𖤍 Mohit 𖤍 [ ʙᴏᴛ ʟᴏɢs ]\n\n" + logs)
 
 async def send_logs_file(ANNIE, ms):
     try:
-        await X1.send_file(ANNIE.chat_id, "Jarvislogs.txt", caption=f"𝗝𝗔𝗥𝗩𝗜𝗦 𝗕𝗢𝗧𝗦 𝗟𝗢𝗚𝗦 📨\n\n  » **Time Taken:** `{ms} seconds`")
+        await X1.send_file(ANNIE.chat_id, "Jarvislogs.txt", caption=f"MOHIT 𝗕𝗢𝗧𝗦 𝗟𝗢𝗚𝗦 📨\n\n  » **Time Taken:** `{ms} seconds`")
     except Exception as e:
         await ANNIE.reply(f"An Exception Occurred!\n\n**ERROR:** {str(e)}")
 
@@ -81,7 +81,7 @@ async def check_stats(event):
     if event.sender_id == OWNER_ID or event.sender_id in SUDO_USERS:
         user_count = stats_collection.count_documents({'type': 'user'})
         group_count = stats_collection.count_documents({'type': 'group'})
-        stats_message = f"⚔️ 𝗝𝗔𝗥𝗩𝗜𝗦 𝗦𝗢𝗟𝗢 𝗦𝗧𝗔𝗧𝗦 ⚔️"
+        stats_message = f"⚔️ 𝗠𝗢𝗛𝗜𝗧 𝗦𝗢𝗟𝗢 𝗦𝗧𝗔𝗧𝗦 ⚔️"
         
         await event.reply(stats_message, file=AYU, buttons=[
             [Button.inline("ᴜsᴇʀs", data="user_stats"), Button.inline("ᴄʜᴀᴛs", data="group_stats")],
@@ -111,7 +111,7 @@ async def callback(event):
             [Button.inline("ᴜsᴇʀs", data="user_stats"), Button.inline("ᴄʜᴀᴛs", data="group_stats")],
             [Button.inline("ᴏᴠᴇʀᴀʟʟ", data="overall_stats")]
         ]
-        await event.edit("⚔️ 𝗝𝗔𝗥𝗩𝗜𝗦 𝗦𝗢𝗟𝗢 𝗦𝗧𝗔𝗧𝗦 ⚔️", file=AYU, buttons=buttons)
+        await event.edit("⚔️ 𝗠𝗢𝗛𝗜𝗧 𝗦𝗢𝗟𝗢 𝗦𝗧𝗔𝗧𝗦 ⚔️", file=AYU, buttons=buttons)
 
 @X1.on(events.NewMessage(incoming=True, pattern=r"\%sbroadcast(?: |$)(.*)" % hl))
 async def broadcast(event):
