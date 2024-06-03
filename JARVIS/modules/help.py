@@ -7,14 +7,14 @@ from config import X1, SUDO_USERS, CMD_HNDLR as hl
 HELP_STRING = (
     "**𖤍 ᴊᴀʀᴠɪs sᴘᴀᴍ ʜᴇʟᴘ ᴍᴇɴᴜ 𖤍**\n\n"
     "» ᴄʟɪᴄᴋ ᴏɴ ʙᴇʟᴏᴡ ʙᴜᴛᴛᴏɴꜱ ꜰᴏʀ ʜᴇʟᴘ\n"
-    "» **ᴅᴇᴠᴇʟᴏᴘᴇʀ**: @JARVIS_V2"
+    "» **ᴅᴇᴠᴇʟᴏᴘᴇʀ**: @Mohitkumar076"
 )
 
 HELP_BUTTONS = [
     [Button.inline("• ꜱᴘᴀᴍ •", data="spam"), Button.inline("• ʀᴀɪᴅ •", data="raid")],
     [Button.inline("• ᴇxᴛʀᴀ •", data="extra")],
-    [Button.url("• ᴄʜᴀɴɴᴇʟ •", "https://t.me/JARVIS_V_SUPPORT"),
-     Button.url("• sᴜᴘᴘᴏʀᴛ •", "https://t.me/Dora_Hub")]
+    [Button.url("• ᴄʜᴀɴɴᴇʟ •", "https://t.me/ROYAL_WORLD_84"),
+     Button.url("• sᴜᴘᴘᴏʀᴛ •", "https://t.me/R_I_S_I_NG")]
 ]
 
 EXTRA_MSG = (
@@ -30,7 +30,7 @@ EXTRA_MSG = (
     f"𝗟𝗲𝗮𝘃𝗲: **ᴛᴏ ʟᴇᴀᴠᴇ ɢʀᴏᴜᴘ/ᴄʜᴀɴɴᴇʟ**\n"
     f"  1) {hl}leave <group/chat id>\n"
     f"  2) {hl}leave : ᴛʏᴘᴇ ɪɴ ᴛʜᴇ ɢʀᴏᴜᴘ ʙᴏᴛ ᴡɪʟʟ ᴀᴜᴛᴏ ʟᴇᴀᴠᴇ ᴛʜᴀᴛ ɢʀᴏᴜᴘ\n\n"
-    f"**@JARVIS_V2**"
+    f"**@Mohitkumar076**"
 )
 
 RAID_MSG = (
@@ -53,7 +53,7 @@ RAID_MSG = (
     f"𝐐𝐑𝐚𝐢𝐝: **ᴀʙᴄᴅ ʀᴀɪᴅ ᴏɴ ᴛʜᴇ ᴜꜱᴇʀ.**\n"
     f"  1) {hl}qraid <count> <username>\n"
     f"  2) {hl}qraid <count> <reply to user>\n\n"
-    f"**© @JARVIS_V2**"
+    f"**© @Mohitkumar076**"
 )
 
 SPAM_MSG = (
@@ -65,7 +65,7 @@ SPAM_MSG = (
     f"  1) {hl}pspam <count>\n\n"
     f"𝗛𝗮𝗻𝗴: **ꜱᴘᴀᴍꜱ ʜᴀɴɢɪɴɢ ᴍᴇꜱꜱᴀɢᴇꜱ ꜰᴏʀ ɢɪᴠᴇɴ ᴄᴏᴜɴᴛᴇʀ.**\n"
     f"  1) {hl}hang <counter>\n\n"
-    f"**© @JARVIS_V2**"
+    f"**© @Mohitkumar076**"
 )
 
 def is_sudo_user(user_id):
@@ -95,7 +95,7 @@ async def handle_callback_query(event, message, back_button_data):
     )
 
 async def handle_callback_query_error(event):
-    await event.answer("ᴘᴀʜʟᴇ ᴊᴀʀᴠɪs ᴘᴀᴘᴀ sᴇ sᴜᴅᴏ ʟᴇʟᴏ☎️ @JARVIS_V2", cache_time=0, alert=True)
+    await event.answer("ᴘᴀʜʟᴇ ᴊᴀʀᴠɪs ᴘᴀᴘᴀ sᴇ sᴜᴅᴏ ʟᴇʟᴏ☎️ @Mohitkumar076", cache_time=0, alert=True)
 
 @X1.on(events.NewMessage(incoming=True, pattern=r"\%shelp(?: |$)(.*)" % hl))
 async def help(event):
