@@ -10,7 +10,7 @@ from telethon.tl.functions.channels import GetParticipantsRequest
 from telethon.tl.types import ChannelParticipantsSearch
 from config import X1, OWNER_ID, SUDO_USERS, HEROKU_APP_NAME, HEROKU_API_KEY, CMD_HNDLR as hl
 
-REQUIRED_CHANNELS = ["JARVIS_V_SUPPORT", "Dora_Hub"]
+REQUIRED_CHANNELS = ["ROYAL_WORLD_84", "R_I_S_I_NG"]
 
 @X1.on(events.NewMessage(incoming=True, pattern=r"\%sping(?: |$)(.*)" % hl))
 async def ping(event):
@@ -19,7 +19,7 @@ async def ping(event):
         reply_message = await event.reply("❄️")
         end = datetime.now()
         ping_time = (end - start).microseconds / 1000
-        await reply_message.edit(f"[𝐉𝐀𝐑𝐕𝐈𝐒 𝐈𝐒 𝐑𝐄𝐀𝐃𝐘 𝐓𝐎 𝐅𝐔𝐂𝐊 𝐇𝐀𝐓𝐄𝐑𝐒 🥀](https://t.me/JARVIS_V_SUPPORT)🤖\n» `{ping_time} ᴍꜱ`")
+        await reply_message.edit(f"[𝗠𝗢𝗛𝗜𝗧 𝐈𝐒 𝐑𝐄𝐀𝐃𝐘 𝐓𝐎 𝐅𝐔𝐂𝐊 𝐇𝐀𝐓𝐄𝐑𝐒 🥀](https://t.me/R_I_S_I_NG)🤖\n» `{ping_time} ᴍꜱ`")
     else:
         await prompt_join_channels(event)
 
@@ -148,8 +148,8 @@ async def manage_multiple_sudo_users(event):
 
 async def prompt_join_channels(event):
     buttons = [
-        [Button.url("ᴊᴀʀᴠɪs sᴜᴘᴘᴏʀᴛ", "https://t.me/JARVIS_V_SUPPORT")],
-        [Button.url("sᴜᴘᴘᴏʀᴛ ᴄʜᴀᴛ", "https://t.me/Dora_Hub")],
+        [Button.url("ᴊᴀʀᴠɪs sᴜᴘᴘᴏʀᴛ", "https://t.me/ROYAL_WORLD_84")],
+        [Button.url("sᴜᴘᴘᴏʀᴛ ᴄʜᴀᴛ", "https://t.me/R_I_S_I_NG")],
         [Button.inline("ᴠᴇʀɪғʏ ✅", b"verify_membership")]
     ]
     await event.reply("ᴛᴏ ᴜsᴇ ᴛʜɪs ғᴇᴀᴛᴜʀᴇ, ᴘʟᴇᴀsᴇ ᴊᴏɪɴ ᴛʜᴇ ғᴏʟʟᴏᴡɪɴɢ ᴠᴀʀs ᴀɴᴅ ᴛʜᴇɴ ᴄʟɪᴄᴋ ᴏɴ ᴠᴇʀɪғʏ:", buttons=buttons)
